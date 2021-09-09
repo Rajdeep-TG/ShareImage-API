@@ -24,6 +24,6 @@ app.get('/v1/image', (req, res) => {
         });
 })
 
-app.listent(PORT, () => {
+app.listen(PORT, () => {
 	console.log(`Server Listening on Port ${PORT}!`);
 })
