@@ -1,9 +1,13 @@
 const express = require('express');
+const favicon = require('serve-favicon');
+const path = require('path');
 const request = require('request');
 const shareimage = require('shareimage');
 const PORT = process.env.PORT || 8080
 
 const app = express();
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 app.get('/v1/image', (req, res) => {
     const image = shareimage.get(req.query)
@@ -25,5 +29,5 @@ app.get('/v1/image', (req, res) => {
 })
 
 app.listen(PORT, () => {
-	console.log(`Server Listening on Port ${PORT}!`);
+    console.log(`Server Listening on Port ${PORT}!`);
 })
