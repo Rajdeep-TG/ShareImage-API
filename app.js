@@ -1,10 +1,11 @@
 const express = require('express');
 const request = require('request');
 const shareimage = require('shareimage');
+const PORT = process.env.PORT
 
 const app = express();
 
-app.listen(process.env.PORT || 5800, () => {
+app.listen(PORT, () => {
     console.log("Success")
 })
 
