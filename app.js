@@ -1,13 +1,9 @@
 const express = require('express');
 const request = require('request');
 const shareimage = require('shareimage');
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080
 
 const app = express();
-
-app.listen(PORT, () => {
-    console.log("Success")
-})
 
 app.get('/v1/image', (req, res) => {
     const image = shareimage.get(req.query)
@@ -26,4 +22,8 @@ app.get('/v1/image', (req, res) => {
                 res.send(resp.body);
             }
         });
+})
+
+app.listent(PORT, () => {
+	console.log(`Server Listening on Port ${PORT}!`);
 })
