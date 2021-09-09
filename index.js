@@ -1,5 +1,5 @@
 const express = require('express');
-const favicon = require('serve-favicon');
+const favicon = require('express-favicon');
 const path = require('path');
 const request = require('request');
 const shareimage = require('shareimage');

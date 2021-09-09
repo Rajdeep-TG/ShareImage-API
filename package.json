@@ -8,8 +8,8 @@
     },
     "dependencies": {
         "express": "^4.17.1",
+        "express-favicon": "^2.0.1",
         "request": "latest",
-        "serve-favicon": "^2.5.0",
         "shareimage": "^1.2.0"
     }
 }
