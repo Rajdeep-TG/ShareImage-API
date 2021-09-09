@@ -1,0 +1,14 @@
+{
+    "name": "shareimage-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "npx nodemon app.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "shareimage": "^1.2.0",
+        "request": "latest"
+    }
+}
